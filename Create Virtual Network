@@ -1,0 +1,5 @@
+Create a Virtual Network (VNet) in the same region where you will deploy the VMs. This will ensure that the client VMs can communicate with the log server.
+
+Go to the Azure Portal and select Virtual Networks from the left-hand menu.
+Click + Create to create a new virtual network.
+Set the name (e.g., log-vnet), region, and other network configurations.
