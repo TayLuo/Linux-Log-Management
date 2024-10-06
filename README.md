@@ -9,4 +9,4 @@ Here are the step by step guidenline.
 -  [Configure the Log Server](https://github.com/TayLuo/Linux-Log-Management/blob/main/Configure%20the%20Log%20Server)
 - [Configure the Client VM](https://github.com/TayLuo/Linux-Log-Management/blob/main/Configure%20the%20Client%20VM)
  - [Verify Centralized Logging](https://github.com/TayLuo/Linux-Log-Management/blob/main/Verify%20Centralized%20Logging)
--[Organize Logs by Host](https://github.com/TayLuo/Linux-Log-Management/blob/main/Organize%20Logs%20by%20Host)
+- [Organize Logs by Host](https://github.com/TayLuo/Linux-Log-Management/blob/main/Organize%20Logs%20by%20Host)
