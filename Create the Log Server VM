@@ -1,0 +1,20 @@
+Create a VM that will serve as the centralized log server.
+  Go to Azure Portal and click Virtual Machines.
+    Click + Create and select Virtual Machine.
+      Select the resource group (or create a new one), and give the VM a name like log-server.
+        Choose Ubuntu 20.04 LTS as the image.
+          Choose a size such as Standard B1s for low-cost usage (can scale up if necessary).
+            Create a username and SSH public key for authentication.
+              Ensure the VM is placed within the virtual network (log-vnet) and subnet (log-subnet) that you created earlier.
+                  Open the Required Ports:
+
+Open the Networking section during VM creation.
+Ensure that ports 514 (TCP/UDP) are open to allow logging traffic. You can create a new inbound security rule to allow traffic:
+Port: 514
+Protocol: Both (TCP and UDP)
+Source: Any
+Alternatively, you can edit the Network Security Group (NSG) later if needed.
+
+Deploy the VM:
+
+Click Review + Create, then Create to deploy the VM.
