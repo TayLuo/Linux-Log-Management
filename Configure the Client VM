@@ -1,0 +1,16 @@
+1. Install rsyslog on the client:
+    sudo apt update
+    sudo apt install rsyslog -y
+
+2.Configure the Client to Send Logs to the Central Log Server:
+    sudo nano /etc/rsyslog.conf
+
+Add the following line at the end of the file to send logs to the central log server 
+(replace log-server-ip-address with the actual IP address of your log server):
+  # tcp
+    *.* @192.168.2.4:514 
+  # udp
+   *.* @192.168.2.4:514 
+
+3.Restart the Rsyslog Service:
+    sudo systemctl restart rsyslog
