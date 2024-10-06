@@ -1,0 +1,27 @@
+1. SSH into the Log Server:
+  On your local machine, use SSH to connect to the log server:
+  ssh username@log-server-ip-address
+
+2. Install Rsyslog on the Log Server:
+  Update the package list and install Rsyslog:
+  sudo apt update
+  sudo apt install rsyslog -y
+
+3.Enable Remote Logging:
+  Edit the Rsyslog configuration file to allow receiving logs from client machines over TCP and UDP:
+  sudo nano /etc/rsyslog.conf
+
+  Uncomment the following lines to enable remote log reception:
+  # Provides TCP syslog reception
+  module(load="imtcp")
+  input(type="imtcp" port="514")
+
+  # Provides UDP syslog reception
+  module(load="imudp")
+  input(type="imudp" port="514")
+
+4.Restart the Rsyslog Service:
+  sudo systemctl restart rsyslog
+
+5.Verify Remote Log Reception:
+  sudo netstat -tulnp | grep 514
