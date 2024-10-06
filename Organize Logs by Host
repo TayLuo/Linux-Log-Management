@@ -1,0 +1,13 @@
+To make it easier to identify logs from different clients, you can create separate log files for each client.
+
+1.Create a Template on the Log Server:
+  Edit the Rsyslog configuration file on the log server:
+    sudo nano /etc/rsyslog.conf
+
+2.Add the following lines at the end of the file to create unique log files for each client:
+  # Log all messages from remote hosts
+template(name="RemoteHostLog" type="string" string="/var/log/%HOSTNAME%/syslog.log")
+*.* ?RemoteHostLog
+
+3.Restart Rsyslog:
+  sudo systemctl restart rsyslog
