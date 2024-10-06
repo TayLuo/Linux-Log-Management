@@ -8,4 +8,4 @@ Here are the step by step guidenline.
 -  [Create Client VM](https://github.com/TayLuo/Linux-Log-Management/blob/main/Deploy%20Client%20VM)
 -  [Configure the Log Server](https://github.com/TayLuo/Linux-Log-Management/blob/main/Configure%20the%20Log%20Server)
 - [Configure the Client VM](https://github.com/TayLuo/Linux-Log-Management/blob/main/Configure%20the%20Client%20VM)
-- 
+- [Verify Centralized Logging]
