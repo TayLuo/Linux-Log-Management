@@ -1,0 +1,6 @@
+1.Test Logging from a Client:
+    logger "Test log message from client1"
+
+2.Check Logs on the Log Server:
+    sudo tail -f /var/log/syslog
+You should see the log messages from the client machines.
