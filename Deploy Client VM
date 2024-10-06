@@ -1,0 +1,8 @@
+Create VMs that will act as clients, sending logs to the centralized log server. You can create multiple clients to simulate real-world scenarios.
+
+Follow the same steps as creating the log server VM but name the clients something like client1, client2, etc.
+Place these VMs in the same virtual network (log-vnet) and ensure they can communicate with the log server.
+No need to open ports on client VMs for inbound traffic.
+Deploy the Client VMs:
+
+Review and deploy each client VM as you did with the log server VM.
